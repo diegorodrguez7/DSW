@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --colorTexto: #49454567;
+}
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+body{
+    align-items: center;
+    background: rgb(180,58,95);
+    background: -webkit-linear-gradient(left, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: -o-linear-gradient(left, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(to right, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    display:flex;
+    font-family: 'Roboto', sans-serif;
+    height: 600px;
+    justify-content: center;
+}
+
+h1{
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.65);
+}
+form{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.62);
+    padding:40px 0;
+    margin-top: 140px;
+}
+.title-warning{
+    color:#fff;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.65);
+}
+.ctn-warning{
+    width: 400px;
+    height: 200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.62);
+    padding:40px 20px;
+    margin-left: 100px;
+}
+.linkMainPage{
+    color: #ffffff;
+    background: none;
+    text-decoration:underline;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 0 1px 1px #000;
+    height: 40px;
+    width: 200px;
+    padding-top: 10px;
+    top:30px;
+    left: 40px;
+    position: absolute;
+    text-align: center;
+}
+.linkMainPage::before{
+    content: "\f060";
+    color:#fff;
+    display: inline-block;
+    left:-10px;
+    text-decoration:none;
+    font-weight: 900;
+    position: relative;
+    font-size: 30px;
+    font-family: 'Font Awesome\ 5 Free';
+    width:40px;
+    height: 40px;
+}
+.linkMainPage:active {
+    color:rgb(210, 210, 210);
+}
+a:hover{
+    opacity: 0.8;
+}
+.ctn-form{
+    margin:auto;
+}
+.ctn-form .ctn-input{
+    position: relative;
+    margin:45px;
+}
+.ctn-input input{
+    background:none;
+    border:none;
+    border-bottom: 1px solid var(--colorTexto);
+    color:#c6c6c6;
+    display: block;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+}
+.ctn-input input:focus{
+    color: rgb(94,93,93);
+    outline: none;
+}
+.ctn-input label{
+    bottom: 0;
+    color: var(--colorTexto);
+    font-size: 16px;
+    left:5px;
+    position: absolute;
+    transition: 0.5s ease all;
+    top:10px;
+}
+.ctn-input input:focus~label,
+.ctn-input input:valid~label{
+    color:rgb(179, 112, 51) ;
+    font-size: 14px;
+    top:-14px;
+}
+.barra{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.barra::before{
+    background: linear-gradient(to right, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    bottom: 0;
+    content: "";
+    height:2px;
+    left:0;
+    position: absolute;
+    transition: 0.3s ease width;
+    width: 0%;
+}
+.ctn-input input:focus~.barra::before{
+    width:100%;
+}
+.ctn-send-reset input,a{
+    background: rgb(180,58,95);
+    background: -webkit-linear-gradient(left, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: -o-linear-gradient(left, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(to right, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 40px;
+    width: 80%;
+    margin: 10px auto;
+}
+.ctn-send-reset a{
+    text-align: center;
+    padding-top: 10px;
+}
+.ctn-send-reset input:hover{
+    opacity: 0.7;
+}
+/*ZONE OPTIONS */
+.select-box{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin-left: 40px;
+}
+.select-box .options-container {
+    border: 2px solid var(--colorTexto);
+    color: var(--colorTexto);
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.45s;
+    border-radius: 8px;
+    overflow: hidden;
+    order:1;
+}
+.selected{
+    border: 2px solid var(--colorTexto);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: var(--colorTexto);
+    position: relative;
+    order:0;
+}
+.selected::after{
+    content:"\f063";
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Font Awesome\ 5 Free';
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+    transition: all 0.4s;
+}
+.select-box .options-container.active{
+    max-height: 240px;
+    opacity: 1;
+    overflow-y:scroll;
+}
+.select-box .options-container.active  + .selected::after{
+    transform: rotateX(180deg);
+    top:-6px;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--colorTexto);
+    border-radius: 0 8px 8px 0;
+}
+.select-box .options-container::-webkit-scrollbar-thumb {
+    background:  #dbdbdb;
+    border-radius: 0 8px 8px 0;
+}
+.select-box .option,
+.selected{
+    padding: 12px 24px;
+    cursor: pointer;
+}
+.select-box .option:hover{
+    background: #dbdbdb;
+}
+.select-box label{
+    cursor: pointer;
+}
+.select-box .option .radio{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .ctn-form{
+        width: 80%;
+    }
+}

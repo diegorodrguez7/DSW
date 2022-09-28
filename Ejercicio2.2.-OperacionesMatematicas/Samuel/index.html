@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercico Menus</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/da9679571a.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="quellueva()">
+
+   <div class="rainyday">
+       <h1 class="main-title">Iniciar Sesión</h1>
+       <img id="background" src="images/bg2.jpg" alt="background">
+       <div class="ctn-forms">
+           <form id="form" action="logeo.php" method="post">
+            <div class="ctn-form">
+               <div class="ctn-titulo-form">
+                   <h1>Bienvenido</h1>
+               </div>
+               <div class="ctn-input">
+                   <input type="text" name="usuario" autocomplete="off" id="usuario" required>
+                   <span class="barra"></span>
+                   <label for="usuario">Usuario</label>
+               </div>
+               <div class="ctn-input">
+                   <input type="password" name="contraseña" autocomplete="off" id="contraseña" required>
+                   <span class="barra"></span>
+                   <label for="contraseña">Contraseña</label>
+               </div>
+               <div class="ctn-send-reset">
+                   <input type=submit value="Enviar">
+                   <input type="reset" value="Borrar">
+                   <div class="ctn-datas">
+                     <p>Datos de Registro</p>
+                     <ul>
+                         <li><i class="fas fa-user"></i>Usuario: jorge</li>
+                         <li><i class="fas fa-key"></i>Contraseña: 1234</li>
+                     </ul>
+                   </div>
+               </div>
+           </div>
+       </form>
+       </div>
+   </div>
+
+    <script src="js/rainyday.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2.2</title>
+</head>
+
+<body>
+    <style>
+        .cuerpo {
+            width: 20%;
+            margin-top: 12%;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 15px;
+            text-align: center;
+            line-height: 1.5em;
+            background-color: white;
+            box-shadow: black 5px 5px 10px;
+            border-radius: 10px;
+
+        }
+
+        input:focus {
+            border: 0px black solid;
+        }
+
+        body {
+            margin: 0;
+            background-color: white;
+            font-family: arial;
+            background: radial-gradient(circle, rgba(37,37,37,1) 0%, rgba(0,0,0,1) 100%);
+        }
+
+        form {
+            margin: auto;
+            width: 70%;
+            text-align: center;
+        }
+
+        input {
+            margin: auto;
+            margin-bottom: 1em;
+        }
+
+        select{
+            display:block;
+            margin: auto;
+            margin-bottom: 1em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .texto {
+            border-radius:8px ;
+
+        }
+        .volver{
+            margin: 20px;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+            color:white
+        }
+        a:visited{
+            color:white
+        }
+
+        .boton{
+            border:1px solid black;
+            background-color: #ccffde;
+            width: 80px;
+        }
+
+        .boton1:hover{
+            transition:background-color 0.5s;
+            background-color: #9bc2a9;
+        }
+
+        .boton2:hover{
+            transition:background-color 0.5s;
+            background-color: #9bc2a9;
+        }
+
+        .numero{
+            width: 80px;
+        }
+
+    </style>
+    <div class="volver">
+        <a href="../lista.html">Volver al menú</a>
+    </div>
+    <div class="cuerpo">
+        <h1>Ejercicio 2.4</h1>
+        <form action="ejercicio2.4.php" method="post">
+            <input class="numero" type="number" name="n1" placeholder="Tabla" min=1 max=10><br>
+            <input class="boton boton1" type="submit" value="Enviar">
+            <input class="boton boton2" type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="../css/estilos_menu.css">
+        <script src="https://kit.fontawesome.com/da9679571a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <form id="form" action="calculadora_switch.php" method="post">
+            <div class="ctn-form">
+                <div class="ctn-titulo-form">
+                    <h1>Calculadora</h1>
+                </div>
+                <div class="ctn-input">
+                    <input type="number" name="numero1" autocomplete="off" id="numero1" required>
+                    <span class="barra"></span>
+                    <label for="numero1">Numero1</label>
+                </div>
+                <div class="ctn-input">
+                    <input type="number" name="numero2" autocomplete="off" id="numero2" required>
+                    <span class="barra"></span>
+                    <label for="numero2">Numero2</label>
+                </div>
+                <div class="select-box">
+                    <div class="options-container">
+                        <div class="option">
+                            <input type="radio" class="radio" id="suma" name="operands" value="+">
+                            <label for="suma">Suma(+)</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="resta" name="operands" value="-">
+                            <label for="resta">Resta(-)</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="multi" name="operands" value="*">
+                            <label for="multi">Multiplicación(x)</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="division" name="operands" value="/">
+                            <label for="division">División(/)</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="resto" name="operands" value="%">
+                            <label for="resto">Resto División(%)</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" class="radio" id="exponencial" name="operands" value="**">
+                            <label for="exponencial">Numero Exponencial(E)</label>
+                        </div>
+                   </div>
+                   <div class="selected">
+                         Escoge la Operación:
+                   </div>
+
+                </div>
+                <div class="ctn-send-reset">
+                    <input type=submit value="Enviar">
+                    <input type="reset" value="Borrar">
+                    <a href="../index.html">Volver al menu</a>
+                </div>
+              </div>
+            </form>
+            <script src="js/script.js"></script>
+    </body>
+</html>

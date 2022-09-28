@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Sucesión de Numeros</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/estilos_menu.css">
+    </head>
+    <body>
+        <form id="form" action="sucesion.php" method="post">
+            <div class="ctn-form">
+                <div class="ctn-titulo-form">
+                    <h1>Sucesion de Numeros</h1>
+                </div>
+                <div class="ctn-input">
+                    <input type="text" name="columna" autocomplete="off" id="columna" required>
+                    <span class="barra"></span>
+                    <label for="columna">Introduce las columnas</label>
+                </div>
+                <div class="ctn-input">
+                    <input type="number" name="fila" autocomplete="off" id="fila" required>
+                    <span class="barra"></span>
+                    <label for="fila">Introduce las filas</label>
+                </div>
+                <div class="ctn-input">
+                    <input type="number" name="numero1" autocomplete="off" id="numero1" required>
+                    <span class="barra"></span>
+                    <label for="numero1">Introduce el numero 1</label>
+                </div>
+                <div class="ctn-input">
+                    <input type="number" name="incremento" autocomplete="off" id="incremento" required>
+                    <span class="barra"></span>
+                    <label for="incremento">Introduce el incremento</label>
+                </div>
+                <div class="ctn-send-reset">
+                    <input type=submit value="Enviar">
+                    <input type="reset" value="Borrar">
+                    <a href="../index.html">Volver al menu</a>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

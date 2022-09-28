@@ -1,0 +1,38 @@
+body{
+  font-size: 20px;
+  color: #6f0478;
+  text-align: center;
+}
+div{
+  background-color:#f1c7ec;
+  margin: auto;
+  border: 3px solid #204d09;
+  width: 600px;
+  border-radius:30px;
+  padding: 10px;
+
+}
+input{
+  margin-top: 10px;
+}
+p{
+  font-size: 25px;
+  margin-top: 10px;
+}
+.uno{
+  background-color:#f1aee9;
+  margin-top:50px;
+  width: 90%;
+  height: 500px;
+  box-shadow: inset -5px -5px 5px 5px hsla(0, 0%, 0%, 0.64);
+}
+.dos{
+  height: 300px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px 5px hsla(0, 0%, 0%, 0.64);
+}
+.button{
+  width: 70px;
+  background-color: #6f0478;
+  color: #fff;
+}

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.rainyday{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.rainyday img{
+    width: 100%;
+    height: 100%;
+}
+.rainyday h1{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.31);
+    z-index: 1;
+    font-size: 50px;
+    color: white;
+    font-family: 'Merienda', cursive;
+}
+.rainyday .ctn-forms{
+    position: absolute;
+    border-radius: 10px;
+    background:rgba(255, 255, 255, 0.6);
+    padding-top: 70px;
+    text-align: center;
+    top: 55%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.62);
+    z-index: 1;
+    width:30%;
+    height:30%;
+}
+.rainyday p{
+    font-weight: 700;
+    color:rgb(245, 0, 0);
+    font-size: 20px;
+}
+.rainyday p:after{
+    content:"\f00d";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    font-size: 25px;
+    padding: 5px;
+    height: 20px;
+    width: 32px;
+}
+.linkMainPage{
+    color: #ffffff;
+    text-decoration:underline;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 0 1px 1px #000;
+    height: 40px;
+    width: 200px;
+    padding-top: 10px;
+    top:30px;
+    left: 40px;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+}
+.linkMainPage::before{
+    content: "\f060";
+    color:#fff;
+    display: inline-block;
+    left:-10px;
+    text-decoration:none;
+    font-weight: 900;
+    position: relative;
+    font-size: 30px;
+    font-family: 'Font Awesome\ 5 Free';
+    width:40px;
+    height: 40px;
+}
+.linkMainPage:active {
+    color:rgb(210, 210, 210);
+}
+a:hover{
+    opacity: 0.8;
+}

@@ -1,0 +1,38 @@
+body {
+  background-color: #00bcd4;
+  color:white;
+  font-family: monospace;
+}
+
+div {
+  background-color: #18ffff;
+  padding: 5%;
+  margin-top:2%;
+  margin-left: 15%;
+  width:50%;
+  color:black;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+input{
+  background-color: #00bcd4;
+  border:0
+}
+
+.btn-enviar {
+  margin-top:1%;
+  font-size:1.2em;
+  font-family: fantasy;
+  color:rgb(61, 138, 138);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+}
+.btn-enviar:active {
+  outline:none;
+  transform: translateX(2px) translateY(2px);
+  background-color: none;
+  box-shadow: none;
+  cursor: pointer;
+}

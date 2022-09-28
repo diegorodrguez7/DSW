@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Tablas de multiplicar </title>
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <style media="screen">
+    .botondos{
+      background-color: grey;
+      border:2px solid black;
+      border-radius: 5px;
+    }
+    .botondos:focus{
+      outline-color: white;
+    }
+    .number{
+      background-color: transparent;
+      border:2px solid black;
+      margin-top: 5px;
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+    <form action="tablas.php" method="post">
+      Introduce el número de la tabla a mostrar: <br /><input class="number" type="number" name="n1" value="1" min="1" max="10" autocomplete="off"><br />
+      <br />
+      <input class="botondos" type="submit" value="Enviar">
+      <input class="botondos" type="reset" value="Borrar">
+      <a href="../../logged.html"><input class="botondos" type="button" value="Volver"></a>
+      <br />
+    </form>
+    <form class="" action="todas.php" method="post">
+      <input class="botondos" type="submit" name="n3" value="Mostrar todas">
+    </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,363 @@
+body {
+  background-color: rgb(32, 32, 32);
+  color: rgb(244, 244, 244);
+  padding: 0px;
+  margin: 0px;
+  min-width: 400px;
+}
+
+.black {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation-name: black;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  z-index: -100;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes black {
+    0%   {
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 1);
+    }
+
+    35%  {
+      background-color: rgba(0, 0, 0, 1);
+    }
+
+    99% {
+      z-index: 10;
+    }
+
+    100% {
+      z-index: -100;
+      background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+.bg-image {
+  position: fixed;
+  overflow: hidden;
+  z-index: -100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bgimage {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+header {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  margin: 0px;
+  top:0;
+}
+
+.darkheader {
+  position: fixed;
+  z-index: -99;
+  margin: 0px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.stylea {
+  opacity: 0;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top:0;
+}
+
+.styleb {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 40px;
+  width: 120px;
+  margin: 0px;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.stylea:hover ~ .bodystyle > .styleb {
+  background-color: rgb(22, 53, 66);
+}
+
+.stylea:active ~ .bodystyle > .styleb {
+  box-shadow: inset 0px 0px 0px 2px rgb(138, 213, 215);
+  letter-spacing: 1px;
+}
+
+.bodystyle {
+  -webkit-transition: 0.5s;
+  transition: 0.5s linear;
+}
+
+.stylea:checked ~ .bodystyle {
+  -webkit-filter: hue-rotate(130deg);
+          filter: hue-rotate(130deg);
+}
+
+
+/*---------------/Side-Menu\---------------*/
+
+.container {
+    padding: 0px;
+    padding-top: 4px;
+    height: 46px;
+    width: 50px;
+    margin: 0px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.bar {
+    width: 40px;
+    height: 6px;
+    background-color: rgb(203, 195, 219);
+    margin: 5px;
+    border-radius: 2px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.sideinp {
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  z-index: 100;
+}
+
+.sideinp:hover ~ .container {
+  background-color: rgb(22, 53, 66);
+}
+
+.sideinp:active ~ .container {
+  box-shadow: inset 0px 0px 0px 2px rgb(138, 213, 215);
+}
+
+.sidemenu {
+  min-width: 250px;
+  width: auto;
+  position: fixed;
+  margin-left: -250px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px;
+  bottom: 0px;
+  top: 50px;
+  height: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+/*.sidemenu > ul > li > p {
+  margin-top: 3px;
+}
+
+.sidemenu > ul > li > h4 {
+  margin-bottom: 3px;
+}
+*/
+
+.sideinp:checked ~ .sidemenu {
+  margin: 0px;
+  bottom: 0px;
+  top: 50px;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.sideinp:checked ~ .container > .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 8px) ;
+            transform: rotate(-45deg) translate(-8px, 8px) ;
+}
+
+.sideinp:checked ~ .container > .bar2 {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  opacity: 0;
+}
+
+.sideinp:checked ~ .container > .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+            transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.sideinp:checked ~ .container > .bar {
+    background-color: rgb(120, 209, 206);
+}
+
+.sideinp:checked ~ .darkheader {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+/*---------------\Side-Menu/---------------*/
+
+/*---------------/Login\---------------*/
+
+h3 {
+  text-align: center;
+}
+
+.formul {
+  width: 60%;
+  min-width:300px;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 120px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.formul > form > table {
+  margin: auto;
+}
+
+.formul > p {
+  text-align: center;
+}
+
+.formul > table {
+  margin: auto;
+}
+
+p > input {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+  height: 25px;
+  font-size: 16px;
+  border-bottom: 2px solid rgb(85, 194, 158);
+  color: rgb(244, 244, 244);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+p > input:focus {
+  border-bottom: 2px solid rgb(0, 94, 255);
+  transform: scalex(1.05);
+}
+
+input {
+  outline: none;
+}
+
+td > p {
+  font-size: 20px;
+}
+
+.send {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(244, 244, 244);
+  font-size: 16px;
+  border: none;
+  width: 80%;
+  height: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 10%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.testlog {
+  text-align: center;
+}
+
+.send:hover{
+  background-color: rgb(22, 53, 66);
+}
+
+.send:active {
+  box-shadow: inset 0px 0px 0px 2px rgb(138, 213, 215);
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+/*---------------\Login/---------------*/
+
+.menu {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(244, 244, 244);
+  font-size: 16px;
+  border: none;
+  width: 90%;
+  height: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.menu:hover {
+  background-color: rgb(22, 53, 66);
+}
+
+.menu:active {
+  box-shadow: inset 0px 0px 0px 2px rgb(138, 213, 215);
+  letter-spacing: 1px;
+}
+
+.select {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0px;
+  border: 0px;
+  height: 35px;
+  width: 50px;
+  color: rgb(244, 244, 244);
+  font-size: 20px;
+  outline: none;
+}
+
+option {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.logout {
+  position: absolute;
+  bottom: 20px;
+  width: 85%;
+}
+
+.multipl {
+  text-align: center;
+}
+
+/*---------------/\---------------*/
+/*---------------\/---------------*/

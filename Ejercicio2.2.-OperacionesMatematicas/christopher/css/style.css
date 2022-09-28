@@ -1,0 +1,176 @@
+*{
+  font-family: sans-serif;
+}
+
+body{
+  text-align: center;
+  margin: 1em;
+}
+
+a{
+  color:#006BEA;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.menu{
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+a:hover{
+  color:#2D63A4;
+  font-size: 20px;
+}
+
+.menu > a{
+  padding: 1em;
+  background-color: #6BB3FF;
+  margin: 1em;
+  width: 300px;
+}
+
+.menu > a:hover{
+  color:#3396FF;
+  padding: 1em;
+  background-color: #2D63A4;
+  margin: 1em;
+  width: 300px;
+}
+
+p{
+  padding: 5px;
+  color:#3396FF;
+}
+
+
+.error{
+  background-color: #ff5656;
+  color:#fff;
+  margin:0px;
+  padding: 0.5em;
+  width: auto;
+}
+
+.titulo{
+
+}
+
+.otro{
+  color:#3396FF;
+  margin:0px;
+  padding: 0.5em;
+}
+.otru{
+  color:#057bf9;
+  margin:0px;
+  padding: 0px;
+
+}
+
+.mal{
+  margin: 0;
+  padding: 1em;
+  background-color: red;
+}
+
+textarea{
+  margin: 1em;
+
+}
+
+h1, h3{
+  color:#0088B2;
+  background-color: #EBEBEB;
+  padding:0.5em;
+  margin-top:1px;
+}
+
+.contenido{
+  display: flex;
+  flex-direction: column;
+  background-color: #EBEBEB;
+  height: auto;
+}
+
+.multi{
+  margin:0px;
+  margin-bottom: -15px;
+  padding: 0px;
+}
+
+.multii{
+  border: solid 3px #3396FF;
+  width: 300px;
+  background-color: #BFDEFF;
+  padding: 1em;
+  margin: 0px;
+}
+
+.contenido2{
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EBEBEB;
+  height:auto;
+}
+
+.cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.cont > *{
+  width: 300px;
+}
+
+select{
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:10px;
+}
+
+
+.entrar{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  width: 185px;
+  color:#3396FF;
+}
+
+.enviar{
+  margin-top: 20px;
+  width: 315px;
+  color:#3396FF;
+}
+
+.enviar:hover{
+  background-color: #2D63A4;
+}
+
+input{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:10px;
+}
+
+.error{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+display: flex;
+flex-direction: column;
+justify-content: center;
+*/

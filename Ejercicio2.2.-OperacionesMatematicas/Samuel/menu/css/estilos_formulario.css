@@ -1,0 +1,190 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+.bodies-forms{
+    align-items: center;
+    background: rgb(180,58,95);
+    background: -webkit-linear-gradient(left, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: -o-linear-gradient(left, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(to right, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    display:flex;
+    font-family: 'Roboto', sans-serif;
+    height: 700px;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+}
+.ctn-body-table{
+    background: rgb(180,58,95);
+    background: -webkit-linear-gradient(left, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: -o-linear-gradient(left, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(to right, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 2px 2px #000;
+    position: absolute;
+    top:30px;
+    left:30vw;
+    z-index: 10;
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 1px 2px #000;
+    position: relative;
+    top:10px;
+    z-index: 10;
+}
+h3{
+    margin-top: 30px;
+}
+.linksMainPage{
+    background: rgb(180,58,95);
+    background: -webkit-linear-gradient(left, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: -o-linear-gradient(left, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(to right, rgba(180,58,95,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border: none;
+    color: #fff;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+    width: 200px;
+    z-index: 10;
+}
+.link1{
+    top:350px;
+}
+.link2{
+    top:400px;
+}
+.link3{
+    top:500px
+}
+.link4{
+    top:550px;
+}
+.link5{
+    top:400px;
+}
+.link6{
+    top:450px;
+}
+.link7{
+    top:780px;
+    left:50vw;
+}
+.linkMainPage{
+    color: #ffffff;
+    text-decoration:underline;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 0 1px 1px #000;
+    height: 40px;
+    width: 200px;
+    padding-top: 10px;
+    top:30px;
+    left: 40px;
+    position: absolute;
+    text-align: center;
+}
+.linkMainPage::before{
+    content: "\f060";
+    color:#fff;
+    display: inline-block;
+    left:-10px;
+    text-decoration:none;
+    font-weight: 900;
+    position: relative;
+    font-size: 30px;
+    font-family: 'Font Awesome\ 5 Free';
+    width:40px;
+    height: 40px;
+}
+.linkMainPage:active {
+    color:rgb(210, 210, 210);
+}
+a:hover{
+    opacity: 0.8;
+}
+.ctn-divs{
+    color: #000;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.31);
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    height:500px;
+    line-height: 50px;
+    padding:40px 0;
+    position: absolute;
+    text-align: center;
+    top:150px;
+    width: 500px;
+    z-index:10;
+}
+.ctn-tables-simple{
+    color: #000;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.31);
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    height:700px;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    top:150px;
+    left:40vw;
+    width: 500px;
+    z-index:10;
+}
+.ctn-tables{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    width: 1000px;
+    height: 100%;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 20vw;
+    grid-gap:20px;
+}
+.ctn-table{
+    color: #000;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.31);
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    height: 450px;
+}
+.ctn-sucesion{
+    color: #000;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.31);
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    height:100vh;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    top:150px;
+    left:30vw;
+    width: 700px;
+}

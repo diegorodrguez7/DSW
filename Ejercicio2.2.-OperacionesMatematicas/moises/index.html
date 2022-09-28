@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2.2</title>
+</head>
+
+<body>
+    <style>
+        .cuerpo {
+            width: 20%;
+            margin-top: 15%;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 15px;
+            text-align: center;
+            line-height: 1.5em;
+            background-color: white;
+            box-shadow: black 5px 5px 10px;
+            border-radius: 10px;
+
+        }
+
+
+        body {
+            margin: 0;
+            background-color: white;
+            font-family: arial;
+            background: radial-gradient(circle, rgba(37, 37, 37, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        }
+
+        form {
+            margin: auto;
+            width: 70%;
+            text-align: center;
+        }
+
+        input {
+            margin: auto;
+            margin-bottom: 2em;
+        }
+
+        select {
+            display: block;
+            margin: auto;
+            margin-bottom: 1em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .texto {
+            border-radius: 8px;
+
+        }
+
+        .volver {
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: white
+        }
+
+        a:visited {
+            color: white
+        }
+
+        .boton {
+            border: 1px solid black;
+            background-color: #ccffde;
+            width: 80px;
+        }
+
+        .boton1:hover {
+            transition: background-color 0.5s;
+            background-color: #9bc2a9;
+        }
+
+        .boton2:hover {
+            transition: background-color 0.5s;
+            background-color: #9bc2a9;
+        }
+
+        .numero {
+            width: 170px;
+            display: block;
+            border: 0px solid black;
+            border-bottom: 1px solid black;
+        }
+    </style>
+    <div class="cuerpo">
+        <h1>Iniciar Sesión</h1>
+        <form action="ejercicio2.6.php" method="post">
+            <input class="numero" type="text" name="user" placeholder="Usuario">
+            <input class="numero" type="password" name="pass" placeholder="Contraseña">
+            <input class="boton boton1" type="submit" value="Entrar">
+            <input class="boton boton2" type="reset" value="Recuperar">
+        </form>
+    </div>
+</body>
+
+</html>

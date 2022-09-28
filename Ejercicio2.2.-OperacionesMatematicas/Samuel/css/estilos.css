@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --colorTexto: #49454567;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.rainyday{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.rainyday img{
+    width: 100%;
+    height: 100%;
+}
+.rainyday .main-title{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.31);
+    z-index: 1;
+    font-size: 50px;
+    color: white;
+    font-family: 'Merienda', cursive;
+}
+.rainyday .ctn-forms{
+    position: absolute;
+    border-radius: 10px;
+    background:rgba(255, 255, 255, 0.73);
+    top: 55%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.62);
+    z-index: 1;
+    width:30%;
+    height:70%;
+}
+.rainyday .ctn-forms form{
+    width:100%;
+    height: 100%;
+    padding:40px 30%;
+}
+.ctn-form{
+    margin:auto;
+    overflow: hidden;
+}
+.ctn-form .ctn-input{
+    position: relative;
+    margin:15px;
+}
+.ctn-form div{
+    margin-bottom: 40px;
+}
+.ctn-input input{
+    background:none;
+    border:none;
+    border-bottom: 1px solid var(--colorTexto);
+    color:#c6c6c6;
+    display: block;
+    font-size: 18px;
+    padding: 10px 10px 20px 5px;
+}
+.ctn-titulo-form{
+    margin-left: 20px;
+}
+.ctn-input input:focus{
+    color: rgb(94,93,93);
+    outline: none;
+}
+.ctn-input label{
+    bottom: 0;
+    color: var(--colorTexto);
+    font-size: 16px;
+    left:5px;
+    position: absolute;
+    transition: 0.5s ease all;
+    top:10px;
+}
+.ctn-input input:focus~label,
+.ctn-input input:valid~label{
+    color:rgb(25, 47, 105) ;
+    font-size: 16px;
+    top:-14px;
+}
+.barra{
+    display: block;
+    position: relative;
+    width: 130%;
+}
+.barra::before{
+    background: rgb(29,32,106);
+    background: linear-gradient(90deg, rgba(29,32,106,1) 0%, rgba(60,98,242,1) 46%, rgba(33,153,253,1) 55%, rgba(80,122,186,1) 100%);
+    bottom: 0;
+    content: "";
+    height:2px;
+    left:0;
+    position: absolute;
+    transition: 0.3s ease width;
+    width: 0%;
+}
+.ctn-input input:focus~.barra::before{
+    width:100%;
+}
+.ctn-send-reset input{
+    background: rgba(73,155,234,0.6);
+    background: -moz-linear-gradient(left, rgba(73,155,234,0.6) 0%, rgba(32,124,229,0.6) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,0.6)), color-stop(100%, rgba(32,124,229,0.6)));
+    background: -webkit-linear-gradient(left, rgba(73,155,234,0.6) 0%, rgba(32,124,229,0.6) 100%);
+    background: -o-linear-gradient(left, rgba(73,155,234,0.6) 0%, rgba(32,124,229,0.6) 100%);
+    background: -ms-linear-gradient(left, rgba(73,155,234,0.6) 0%, rgba(32,124,229,0.6) 100%);
+    background: linear-gradient(to right, rgba(73,155,234,0.6) 0%, rgba(32,124,229,0.6) 100%);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 40px;
+    width: 80%;
+    margin: 30px auto;
+}
+p{
+    margin-left:20px;
+}
+ul{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    margin-left:30px;
+
+}
+.ctn-send-reset input:hover{
+    opacity: 0.7;
+}
